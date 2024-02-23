@@ -28,7 +28,6 @@ func fileExists(fileName string) (bool, string) {
 		}
 	}
 	return true, fileName
-
 }
 
 type Config struct {
@@ -56,7 +55,6 @@ func CreateConfigFile(clientID string, clientSecret string) {
 
 }
 
-// bu dosya var olan config.yaml içini okuyup config yapısına atacak.
 func ReadConfigFile() (Config, error) {
 	var c Config
 

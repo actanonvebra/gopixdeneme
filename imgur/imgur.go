@@ -1,4 +1,4 @@
-package imgur
+package main
 
 import (
 	"bytes"
@@ -13,7 +13,7 @@ import (
 
 var apiEndpoint = "https://api.imgur.com/3/image"
 
-func UploadAndLink(imagePath string) error {
+func UploadAndDisplayLink(imagePath string) error {
 	// Config yapısını config paketindeki fonksiyon kullanarak al
 	configValues, err := config.ReadConfigFile()
 	if err != nil {
@@ -21,7 +21,7 @@ func UploadAndLink(imagePath string) error {
 	}
 
 	// Resmi yükleme işlemi
-	link:= uploadImageToImgur(imagePath, configValues.ClientID, configValues.ClientSecret)
+	link, err := uploadImageToImgur(apiEndpoint, imagePath, configValues.ClientID, configValues.ClientSecret)
 	if err != nil {
 		return fmt.Errorf("Resim yükleme hatası: %v", err)
 	}
@@ -31,7 +31,7 @@ func UploadAndLink(imagePath string) error {
 	return nil
 }
 
-func uploadImageToImgur(imagePath, clientID, clientSecret string) error {
+func uploadImageToImgur(apiEndpoint, imagePath, clientID, clientSecret string) error {
 	// Resim dosyasını aç
 	file, err := os.Open(imagePath)
 	if err != nil {

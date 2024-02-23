@@ -1,7 +1,10 @@
 package main
 
-import "log"
+import (
+	"github.com/actanonvebra/gopixdeneme/cmd"
+)
 
 func main() {
-	log.Println("Hello")
+
+	cmd.Execute()
 }
