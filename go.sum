@@ -1,3 +1,5 @@
+github.com/actanonvebra/gopixdeneme/imgur v0.0.0-20240223160212-8ad1671a918a h1:ajLQ1YKRhk1ZSfOpxUhIysPNqBOxlxCLPuLKImL01Zo=
+github.com/actanonvebra/gopixdeneme/imgur v0.0.0-20240223160212-8ad1671a918a/go.mod h1:OEHMPEgew6AarUSDcZ0d9WrqCM9SaQrIceWwq1hvWj8=
 github.com/cpuguy83/go-md2man/v2 v2.0.3/go.mod h1:tgQtvFlXSQOSOSIRvRPT7W67SCa46tRHOmNcaadrF8o=
 github.com/inconshreveable/mousetrap v1.1.0 h1:wN+x4NVGpMsO7ErUn/mUI3vEoE6Jt13X2s0bqwp9tc8=
 github.com/inconshreveable/mousetrap v1.1.0/go.mod h1:vpF70FUmC8bwa3OWnCshd2FqLfsEA9PFc4w1p2J65bw=
